@@ -1,0 +1,95 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.Portada{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url('./assets/images/portada.jpg');
+  background-repeat: no-repeat;
+  filter: blur(1px);
+  z-index: -1;
+}
+
+.floating-circle {
+  position: fixed; /* Mantiene el círculo fijo en la pantalla independientemente del scroll */
+  bottom: 20px; /* Posición desde la parte inferior */
+  right: 20px; /* Posición desde la parte derecha */
+  width: 50px; /* Tamaño inicial del círculo */
+  height: 50px; /* Tamaño inicial del círculo */
+  border-radius: 50%; /* Hace que el elemento sea un círculo perfecto */
+  background-color: #09cd92; /* Color de fondo verde */
+  color: rgb(22, 21, 21); /* Texto blanco */
+  display: flex; /* Centra el contenido en el círculo */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  cursor: pointer; /* Cambia el cursor a puntero cuando el mouse pasa por encima */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil para profundidad */
+  font-size: 50px; /* Tamaño del signo "+" */
+  font-weight: bold; /* Texto en negrita */
+  transition: all 0.3s ease; /* Transición para que los cambios sean animados */
+}
+
+/* Estilo al pasar el mouse sobre el círculo */
+.floating-circle.hovered {
+  border-radius: 25px; /* Cambia los bordes para dar un efecto de rectángulo redondeado */
+  width: 150px; /* Cambia el tamaño del círculo a un rectángulo más grande */
+  height: 50px;
+  background-color: #09a372; /* Cambia el color del círculo */
+  justify-content: center; /* Mantiene el texto centrado */
+  color: black;
+  font-size: 24px;
+}
+
+/* Tooltip */
+
+
+/* Estilado de la ventana de diálogo */
+.dialog-overlay {
+  position: fixed; /* Cubre toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ancho completo de la ventana */
+  height: 100vh; /* Altura completa de la pantalla */
+  background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con opacidad */
+  display: flex; /* Centra el contenido vertical y horizontalmente */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja principal de la ventana de diálogo */
+.dialog-box {
+  background: rgb(30, 29, 29); /* Fondo blanco para el área de interacción */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  min-width: 300px; /* Ancho mínimo para el área interactiva */
+  text-align: center; /* Centra todo el contenido */
+}
+
+/* Campo de texto en el cuadro de diálogo */
+.dialog-box input {
+  width: 100%; /* El campo ocupa todo el ancho del cuadro */
+  padding: 8px; /* Espaciado interno */
+  margin-bottom: 10px; /* Espacio entre el campo de texto y el botón */
+  border: 1px solid #ccc; /* Borde de color gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Botón para cerrar la ventana de diálogo */
+.dialog-box button {
+  background-color: #6200EA; /* Color morado para destacar el botón */
+  color: rgb(14, 13, 13); /* Texto blanco */
+  padding: 10px 15px; /* Espaciado interno */
+  border: none; /* Sin bordes */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}

@@ -1,0 +1,123 @@
+/* Contenedor principal */
+/* Define la sección que engloba toda la página y amplía la distribución horizontal */
+.container {
+    padding: 1.5rem; /* Espaciado interno del contenedor */
+    background-color: rgba(255, 255, 255, 0.6); /* Color de fondo del contenedor principal */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Borde del contenedor */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    min-height: 100vh; /* Altura mínima para ocupar la ventana completa */
+    display: flex; /* Diseño flexbox para organizar la barra lateral y contenido principal */
+    font-family: "Times New Roman", Times, serif; /* Fuente general para todo el contenedor */
+    color: #000; /* Texto en color negro */
+    gap: 100px; /* Espaciado entre la barra lateral y el contenido principal */
+    
+    width: 100%;
+    max-width: 3000px; /* Puedes ajustar este valor según el tamaño deseado */
+    margin: 0 auto; /* Centrar el contenedor en la pantalla */
+}
+
+/* Barra lateral de filtros */
+/* Estiliza el área lateral donde se muestran los filtros */
+.sidebar {
+    width: 0 0 600px; /* Incrementa el ancho de la barra lateral */
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo blanco */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Borde de la barra lateral */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para separación visual */
+    padding: 2rem; /* Espaciado interno para mayor comodidad visual */
+}
+
+/* Cuadrado para cada grupo de filtros */
+/* Agrega cuadros alrededor de cada conjunto de opciones de filtro */
+.filter-group {
+    border: 1px solid #646363; /* Borde del cuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1rem; /* Espaciado interno */
+    margin-bottom: 1.5rem; /* Espaciado inferior entre cuadros */
+    background-color: rgba(197, 231, 246, 0.6); /* Color azul claro con 60% de opacidad */ /* Fondo ligeramente diferenciado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+/* Opciones individuales dentro del cuadro */
+/* Cada opción de filtro tiene su propio espaciado y estilo */
+.filter-group label {
+    display: block; /* Cada opción en una nueva línea */
+    margin-bottom: 0.5rem; /* Espaciado entre las opciones */
+    font-size: 0.95rem; /* Tamaño de texto ajustado */
+}
+
+/* Estilo para los títulos */
+/* Configura los títulos en la barra lateral */
+.title {
+    font-size: 1.25rem; /* Tamaño más grande para títulos */
+    font-weight: bold; /* Negrita para mayor énfasis */
+    margin-bottom: 1rem; /* Espaciado inferior entre el título y los elementos siguientes */
+    color: #000; /* Color de texto negro */
+}
+
+/* Contenido principal */
+/* Define el área principal donde se muestra la tabla */
+.main-content {
+    flex-grow: 1; /* Permite que esta sección ocupe el resto del espacio disponible */
+    padding: 2rem; /* Espaciado interno */
+    min-width: 1200px; /* Establece un ancho mínimo */
+}
+
+/* Tabla */
+/* Define la estructura visual de las tablas */
+.table {
+    width: 100%; /* La tabla ocupa todo el ancho disponible */
+    min-width: 1500px;
+    border-collapse: separate; /* Elimina los bordes dobles entre celdas */
+    border-spacing: 20px 0;
+    margin-bottom: 1rem; /* Espaciado inferior */
+    font-family: "Times New Roman", Times, serif; /* Fuente para la tabla */
+    color: #000; /* Texto en color negro */
+    overflow-x: auto; /* Habilita desplazamiento horizontal si es necesario */
+
+    
+}
+
+/* Define el estilo para las celdas */
+.table th,
+.table td {
+    border: 1px solid #0e0e0e; /* Borde entre celdas */
+    padding: 20px; /* Espaciado interno en las celdas */
+    text-align: center; /* Alineación centrada */
+    font-size: 1rem; /* Tamaño de texto en celdas */
+}
+
+/* Encabezados de las tablas */
+.table th {
+    background-color: #f2f2f2; /* Fondo claro para los encabezados */
+    font-weight: bold; /* Negrita para diferenciar del contenido */
+    font-size: 1.5rem; /* Tamaño de texto para encabezados */
+}
+
+/* Botones de navegación */
+/* Contenedor de los botones para cambiar de página */
+.pagination-buttons {
+    display: flex; /* Flexbox para alinear los botones */
+    justify-content: space-between; /* Los botones se separan equitativamente */
+    margin: 1.5rem 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo general para los botones */
+.pagination-buttons button {
+    padding: 0.7rem 1.2rem; /* Tamaño del botón */
+    border: none; /* Elimina bordes por defecto */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #e0e7ee; /* Color de fondo del botón */
+    color: rgb(83, 41, 41); /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-family: "Times New Roman", Times, serif; /* Fuente específica para los botones */
+    font-size: 1rem; /* Tamaño del texto del botón */
+}
+
+/* Efecto hover para los botones */
+.pagination-buttons button:hover {
+    background-color: #d4dae1; /* Color más oscuro al pasar el cursor */
+}
+
+  

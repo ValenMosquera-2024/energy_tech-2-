@@ -1,0 +1,90 @@
+/* Contenedor principal del Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea los elementos desde la izquierda */
+  gap: 50px; /* Espaciado entre el logo y el menú */
+  background: white;
+  padding: 10px 20px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #444;
+  font-family: 'Roboto', sans-serif;
+  height: 80px;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Logo del Navbar */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaciado entre el logo y el texto */
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Contenedor del menú */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos del menú */
+  gap: 30px; /* Espaciado entre los elementos */
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+
+  margin-left: auto; /* Empuja el menú hacia el centro */
+  margin-right: auto; /* Centra el menú dentro del espacio disponible */
+  
+  
+}
+
+
+
+
+/* Estilo de los enlaces del menú */
+.navbar-item a {
+  color: black; /* Color negro para el texto de los enlaces. */
+  text-decoration: none; /* Sin subrayado en los enlaces. */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color al hacer hover. */
+  padding: 5px 10px; /* Espaciado interno para hacer los enlaces más interactivos. */
+  font-weight: 500; /* Estilo de texto semi-negrita. */
+}
+
+/* Cambia el color del enlace al pasar el mouse */
+.navbar-item a:hover {
+  color: rgb(74, 228, 133); /* Color verde brillante al hacer hover. */
+}
+
+
+/* Línea animada que aparece debajo del texto al hacer hover */
+.navbar-item a::after {
+  content: ''; /* Crea un pseudo-elemento vacío para la línea */
+  position: absolute; /* Posiciona la línea relativa al contenedor del enlace */
+  bottom: -3px; /* Coloca la línea justo debajo del texto */
+  left: 0; /* Alinea la línea al inicio del enlace */
+  width: 0; /* Comienza con un ancho de 0 (oculta la línea inicialmente) */
+  height: 2px; /* Define la altura de la línea */
+  background-color: rgb(59, 206, 108); /* Color verde brillante para la línea */
+  transition: width 0.3s ease; /* Suaviza la animación de la línea */
+}
+
+/* Amplía la línea al pasar el mouse por el enlace */
+.navbar-item a:hover::after {
+  width: 100%; /* La línea ocupa todo el ancho del enlace */
+}
+
+
+
+
+  
+  /* Efecto de sombra sutil para un diseño más tecnológico */
+  .navbar-item a {
+    text-shadow: 0px 0px 5px rgba(0, 255, 255, 0.5);
+  }
+  

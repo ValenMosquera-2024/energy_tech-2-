@@ -1,0 +1,65 @@
+/* Contenedor principal de la calculadora */
+.calculadora-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Estilo para los encabezados */
+  .calculadora-container h2 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Estilo para los formularios y el input */
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Transición para el hover en el input */
+  input[type="number"]:hover {
+    border-color: #555;
+  }
+  
+  /* Estilo para el contenedor de resultados */
+  .calculadora-container h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #004080;
+  }
+  
+  /* Colores para mejorar contraste */
+  button {
+    margin: 15px 0;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
